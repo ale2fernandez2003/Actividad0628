@@ -25,9 +25,22 @@ public class Actividad0628
      * @param  y   a sample parameter for a method
      * @return     the sum of x and y 
      */
-    public int jugandoALosDardos(double numero, double valor)
+    public int jugandoALosDardos(double valorx, double valory)
     {
+        double dardo = Math.sqrt(Math.pow(valorx,2) + Math.pow(valory,2));
         int num = 0;
-        return num;
+        if(dardo <= 1 ){
+            num = 10;
+        }
+        else if(dardo <= 5){
+            num = 5;
+        }
+        else if(dardo <= 10){
+            num = 1;
+        }
+        else{
+            num = 0;
+        }
+        return num;    
     }
 }
